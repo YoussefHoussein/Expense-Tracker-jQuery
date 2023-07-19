@@ -6,7 +6,7 @@ let display_value =0
 function addExpense(name,amount){
     return `<table>
     <td><span class="remove">&#128465</span></td>
-    <td class="name">${name}</td>
+    <td class="name">${name}: </td>
     <td class="amount">${amount}</td>
   </table>`
 }
@@ -48,13 +48,13 @@ btn_calculate.click(function(){
     
     display_value+=count_exp
    
-     total.text(display_value)
+     total.text(display_value+" $")
      count_exp=0
  })
  function changeTotal(value){
     
     display_value -=parseInt(value)
-    total.text(display_value)
+    total.text(display_value+" $")
 
  }
 

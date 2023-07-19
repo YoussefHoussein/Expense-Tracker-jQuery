@@ -17,20 +17,21 @@
                 <label for="amount">amount</label> 
                 <input type="number" name="amount" placeholder="amount" id="input-amount" class="inputs" >
                 <br>
-                <hr>
             </div>
             
-            <div>
-                <input type="button" name="expense" id="expense" value="Add">
+            <div class="btn-container">
+                <input type="button" name="expense" id="expense" value="Add" class="btn">
             </div>
             <div id="expenses">
 
             </div>
-            <div><input type="button" id="calculate" value="Calculate"></div>
+            <hr id="hr">
+            <br>
+            <div class="btn-container"><input type="button" id="calculate" value="Calculate" class="btn"></div>
 
-            <div>
-                <span>Total Expense: </span>
-                <span id="exp_total"></span>
+            <div id="result">
+                <span class="res-text">Total Expense: </span>
+                <span id="exp_total" class="res-text"></span>
             </div>
 
             

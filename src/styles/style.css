@@ -6,6 +6,7 @@
     font-family: 'Ubuntu Mono', sans-serif;
     font-size: 1.5rem;
     font-weight: 900;
+    color: #23395B;
 }
 .card-container{
     display: flex;
@@ -21,11 +22,13 @@
     align-items: center;
     justify-content: space-evenly;
     width: 30%;
-    height: 70vh;
-    border: 2px solid black;
+    padding: 2rem;
+    border: 2px solid #161925;
     border-radius: 2%;
+    box-sizing: border-box;
+    background-color: #CBF7ED;
 }
-#submit{
+#calculate{
     display: none;
 }
 .inputs{
@@ -42,5 +45,25 @@
 }
 hr{
     width: 80%;
-    border-top: 2px dashed black;
+    border-top: 2px dashed #161925;
+    display: none;
+}
+#result{
+    display: none;
+}
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.btn{
+    width: 80%;
+    height: 2rem;
+    background-color: #406E8E;
+    color: #161925;
+}
+.remove, .name, .amount, .res-text{
+    font-size: 1rem;
+    font-weight: 100;
 }
